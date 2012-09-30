@@ -1,0 +1,43 @@
+<html>
+<head>
+<style type="text/css">
+            body {
+                position: absolute;
+                left: 300px;
+                font-family: Helvetica, Arial, sans-serif;
+                padding: 10px;
+            }
+            input[type=text] {
+                font-size: 12px;
+            }
+            .textcomment {
+                position: absolute;
+                right: 3px;
+                top: 53px;
+            }
+            .textarea {
+                position: absolute;
+                right: 0;
+                top: 105px;
+            }
+            .textsubmit {
+                position: absolute;
+                right: 0;
+                top: 310px;
+            }
+            .label {
+                font-weight: bold;
+            }
+        </style>
+</head>
+<h1>Edit text:</h1>
+<form method="POST" action="/submission">
+ <textarea cols="20" rows="10" name="filetext">
+ {{content}}
+ </textarea>
+ <br>
+ <input style='display:none' name='parent_rev' value="{{rev}}"></input>
+ <input style='display:none' name='path' value="{{path}}"></input>
+ <input type="submit" value="Save">
+</form>
+</html>
