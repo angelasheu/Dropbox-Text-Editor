@@ -3,8 +3,8 @@ import pystache2
 from bottle import *
 from dropbox import *
 
-APP_KEY = 'zadqraqhwfhzreh'
-APP_SECRET = 'm6vjijuq3mq41y3'
+APP_KEY = 'ENTER APP_KEY HERE'
+APP_SECRET = 'ENTER APP_SECRET HERE'
 ACCESS_TYPE = 'app_folder'
 TOKEN_STORE = {}
 
